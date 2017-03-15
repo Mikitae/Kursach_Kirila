@@ -8,3 +8,9 @@ E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Fon
 E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.exe
 E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.pdb
 E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\asprise-scan-scanner-twain-wia-api.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\AForge.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\AForge.Imaging.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\AForge.Math.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\AForge.xml
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\AForge.Imaging.xml
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\AForge.Math.xml
