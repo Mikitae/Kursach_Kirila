@@ -1,0 +1,10 @@
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\Font_Generator.exe.config
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\Font_Generator.exe
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\Font_Generator.pdb
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.csprojResolveAssemblyReference.cache
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.Form1.resources
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.Properties.Resources.resources
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.csproj.GenerateResource.Cache
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.exe
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.pdb
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\asprise-scan-scanner-twain-wia-api.dll
