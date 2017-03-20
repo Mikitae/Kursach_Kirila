@@ -34,12 +34,20 @@ namespace Font_Generator
 
         private void сканироватьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Scan scan = new Scan();
-            this.pb_1.Image = scan.GetImg();
-            Bitmap s = scan.GetImg();
-            System.Drawing.Image img = s;
-            System.Drawing.Image src_img = Font_Generator.Class.Scale.ScaleImage(img, 20, 20);
-            this.pb_1.Image = src_img;
+            try
+            {
+                Scan scan = new Scan();
+                this.pb_1.Image = scan.GetImg();
+                Bitmap s = scan.GetImg();
+                System.Drawing.Image img = s;
+                System.Drawing.Image src_img = Font_Generator.Class.Scale.ScaleImage(img, 20, 20);
+                this.pb_1.Image = src_img;
+            }
+            catch (asprise_imaging_api.ImagingException)
+            {
+                DialogResult rezult = MessageBox.Show("Сканер не обнаружен.",
+                "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             //this.pb_1.Image = ;
             //this.pb_1.Image = Scan.ScaleImage(Image.FromFile("1.jpg"),20,20);
         }
