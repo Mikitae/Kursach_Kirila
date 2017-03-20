@@ -30,3 +30,4 @@ D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Fo
 D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.Form1.resources
 D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.Properties.Resources.resources
 D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.csproj.GenerateResource.Cache
+D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\Class\Scale.cs

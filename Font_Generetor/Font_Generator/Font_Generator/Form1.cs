@@ -38,7 +38,7 @@ namespace Font_Generator
             this.pb_1.Image = scan.GetImg();
             Bitmap s = scan.GetImg();
             System.Drawing.Image img = s;
-            System.Drawing.Image src_img = Scan.ScaleImage(img,20,20);
+            System.Drawing.Image src_img = Font_Generator.Class.Scale.ScaleImage(img, 20, 20);
             this.pb_1.Image = src_img;
             //this.pb_1.Image = ;
             //this.pb_1.Image = Scan.ScaleImage(Image.FromFile("1.jpg"),20,20);
@@ -47,7 +47,7 @@ namespace Font_Generator
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Bitmap open_image;
-            OpenFileDialog open_dialog_image = new OpenFileDialog(); //создание диалогового окна для выбора файла
+            OpenFileDialog open_dialog_image = new OpenFileDialog(); 
             open_dialog_image.Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*"; //формат загружаемого файла
             if (open_dialog_image.ShowDialog() == DialogResult.OK) //если в окне была нажата кнопка "ОК"
             {
@@ -55,21 +55,15 @@ namespace Font_Generator
                 {
                     open_image = new Bitmap(open_dialog_image.FileName);
                     Image img_to_scale = open_image;
-                    this.pb_1.Image = Scan.ScaleImage(img_to_scale, 20, 20);
+                    this.pb_1.Image = Font_Generator.Class.Scale.ScaleImage(img_to_scale, 20, 20);
                     //this.pb_1.Invalidate();
-                    //вместо pictureBox1 укажите pictureBox, в который нужно загрузить изображение 
-                    //this.pictureBox1.Size = image.Size;
-                    //pictureBox1.Image = image;
                 }
                 catch
                 {
-                    DialogResult rezult = MessageBox.Show("Невозможно открыть выбранный файл",
+                    DialogResult rezult = MessageBox.Show("Невозможно открыть выбранный файл!",
                     "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            //this.ofd_1.ShowDialog();
-            //this.tb_1.Text = this.ofd_1.FileName;
-
         }
     }
 }
