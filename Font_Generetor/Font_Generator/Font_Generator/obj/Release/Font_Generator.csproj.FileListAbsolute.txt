@@ -1,0 +1,17 @@
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\Font_Generator.exe.config
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\Class\Scale.cs
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\Font_Generator.exe
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\Font_Generator.pdb
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\AForge.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\AForge.Imaging.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\AForge.Math.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\asprise-scan-scanner-twain-wia-api.dll
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\AForge.xml
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\AForge.Imaging.xml
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Release\AForge.Math.xml
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Release\Font_Generator.csprojResolveAssemblyReference.cache
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Release\Font_Generator.Form1.resources
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Release\Font_Generator.Properties.Resources.resources
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Release\Font_Generator.csproj.GenerateResource.Cache
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Release\Font_Generator.exe
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Release\Font_Generator.pdb

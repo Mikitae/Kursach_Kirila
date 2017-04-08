@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ofd_1 = new System.Windows.Forms.OpenFileDialog();
             this.tb_1 = new System.Windows.Forms.TextBox();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
@@ -36,9 +37,22 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сканироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.печататьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cb_letter = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgv_text = new System.Windows.Forms.DataGridView();
+            this.first = new System.Windows.Forms.DataGridViewImageColumn();
+            this.sec = new System.Windows.Forms.DataGridViewImageColumn();
+            this.third = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pb_1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_text)).BeginInit();
             this.SuspendLayout();
             // 
             // ofd_1
@@ -47,7 +61,7 @@
             // 
             // tb_1
             // 
-            this.tb_1.Location = new System.Drawing.Point(39, 33);
+            this.tb_1.Location = new System.Drawing.Point(21, 45);
             this.tb_1.Name = "tb_1";
             this.tb_1.Size = new System.Drawing.Size(216, 20);
             this.tb_1.TabIndex = 0;
@@ -58,22 +72,22 @@
             // 
             // pb_1
             // 
-            this.pb_1.Location = new System.Drawing.Point(51, 118);
+            this.pb_1.Location = new System.Drawing.Point(17, 19);
             this.pb_1.Name = "pb_1";
-            this.pb_1.Size = new System.Drawing.Size(749, 412);
+            this.pb_1.Size = new System.Drawing.Size(255, 477);
             this.pb_1.TabIndex = 2;
             this.pb_1.TabStop = false;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
+            this.файлToolStripMenuItem,
+            this.печататьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(863, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1142, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // файлToolStripMenuItem
             // 
@@ -98,30 +112,136 @@
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
-            // comboBox1
+            // печататьToolStripMenuItem
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(397, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 21);
-            this.comboBox1.TabIndex = 5;
+            this.печататьToolStripMenuItem.Name = "печататьToolStripMenuItem";
+            this.печататьToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.печататьToolStripMenuItem.Text = "Печатать";
+            this.печататьToolStripMenuItem.Click += new System.EventHandler(this.печататьToolStripMenuItem_Click);
+            // 
+            // cb_letter
+            // 
+            this.cb_letter.FormattingEnabled = true;
+            this.cb_letter.Items.AddRange(new object[] {
+            "r",
+            "w"});
+            this.cb_letter.Location = new System.Drawing.Point(6, 36);
+            this.cb_letter.Name = "cb_letter";
+            this.cb_letter.Size = new System.Drawing.Size(150, 21);
+            this.cb_letter.TabIndex = 5;
+            this.cb_letter.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(176, 32);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 27);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Загрузить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cb_letter);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(356, 176);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Загрузка файла";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tb_1);
+            this.groupBox2.Location = new System.Drawing.Point(12, 232);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(590, 323);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dgv_text);
+            this.groupBox3.Controls.Add(this.pb_1);
+            this.groupBox3.Location = new System.Drawing.Point(12, 27);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1088, 522);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Проба текста";
+            // 
+            // dgv_text
+            // 
+            this.dgv_text.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv_text.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_text.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgv_text.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_text.ColumnHeadersVisible = false;
+            this.dgv_text.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.first,
+            this.sec,
+            this.third});
+            this.dgv_text.Location = new System.Drawing.Point(334, 19);
+            this.dgv_text.Name = "dgv_text";
+            this.dgv_text.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_text.RowHeadersVisible = false;
+            this.dgv_text.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgv_text.Size = new System.Drawing.Size(719, 469);
+            this.dgv_text.TabIndex = 3;
+            this.dgv_text.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_text_CellContentClick);
+            this.dgv_text.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.Silent);
+            // 
+            // first
+            // 
+            this.first.FillWeight = 20F;
+            this.first.HeaderText = "";
+            this.first.MinimumWidth = 20;
+            this.first.Name = "first";
+            this.first.Width = 20;
+            // 
+            // sec
+            // 
+            this.sec.FillWeight = 20F;
+            this.sec.HeaderText = "";
+            this.sec.MinimumWidth = 20;
+            this.sec.Name = "sec";
+            this.sec.Width = 20;
+            // 
+            // third
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.third.DefaultCellStyle = dataGridViewCellStyle3;
+            this.third.FillWeight = 20F;
+            this.third.HeaderText = "";
+            this.third.MinimumWidth = 20;
+            this.third.Name = "third";
+            this.third.Width = 20;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 611);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.pb_1);
-            this.Controls.Add(this.tb_1);
+            this.ClientSize = new System.Drawing.Size(1142, 611);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Print);
             ((System.ComponentModel.ISupportInitialize)(this.pb_1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_text)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,7 +257,16 @@
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сканироватьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_letter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ToolStripMenuItem печататьToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dgv_text;
+        private System.Windows.Forms.DataGridViewImageColumn first;
+        private System.Windows.Forms.DataGridViewImageColumn sec;
+        private System.Windows.Forms.DataGridViewImageColumn third;
     }
 }
 
