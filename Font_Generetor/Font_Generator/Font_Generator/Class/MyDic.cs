@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using System.Drawing;
 
 
+
 namespace Font_Generator.Class
 {
-    class MyDic
+    public class MyDic
     {
         Dictionary<string, Bitmap> alpha;
 
@@ -25,6 +26,17 @@ namespace Font_Generator.Class
         {
             return this.alpha[key];
         }
+
+        public void Save_dic(string path)
+        {
+            foreach (System.Collections.Generic.KeyValuePair<string,Bitmap> elem in this.alpha)
+            {
+                Image save = elem.Value;
+                //Image save = this.new_dic.get_img("r");
+                save.Save(path + "/" + elem.Key + ".jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);    
+            } 
+        }
+
     
     
     }

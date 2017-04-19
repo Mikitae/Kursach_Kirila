@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Font_Generator.Class;
-
+using System.IO;
+using Font_Generator.Forms; 
 
 
 namespace Font_Generator
@@ -28,6 +29,7 @@ namespace Font_Generator
 
         public Form1()
         {
+            
             InitializeComponent();
             curr_ru = new MyDic();
             //wse = new Print_t();
@@ -44,6 +46,20 @@ namespace Font_Generator
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            ToolStripMenuItem menuItem = new ToolStripMenuItem("Шрифт");
+            menuItem.Click += Set_saved_dic;
+            this.menuStrip1.Items.Add(menuItem);
+            /*
+            string[] lines = File.ReadAllLines("self_fonts.txt");
+            
+            foreach (string line in lines)
+            {
+                menuItem.DropDownItems.Add(line);
+            }
+
+            
+            
+            */
 
             for (int i = 0; i < 20; i++)
             {
@@ -53,7 +69,13 @@ namespace Font_Generator
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+            
+        }
 
+        private void Set_saved_dic(object sender, EventArgs e)
+        {
+            Select_Font_form dic_load = new Select_Font_form();
+            dic_load.ShowDialog();
         }
 
         private void сканироватьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -151,9 +173,8 @@ namespace Font_Generator
              
             if (this.groupBox3.Visible)
             {
-                MessageBox.Show(Convert.ToString(e.KeyChar));
+                
                  
-		         //item.Key == Convert.ToString(e.KeyChar))
 	              
                    //   this.pb_1.Image =
                 try
@@ -200,6 +221,43 @@ namespace Font_Generator
 
         private void dgv_text_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void шрифтToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void button2_Click(object sender, EventArgs e)
+        {
+            FontSave_form open_form = new FontSave_form();
+            open_form.get_Dic(this.curr_ru);
+            //open_form.Show();
+            open_form.ShowDialog();
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void файлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        internal void Open_Dic(string name)
+        {
+
+            Bitmap open_image = new Bitmap("Fonts/"+name+"/r.jpeg");
+            this.curr_ru.Add_letter("r", open_image);
+
+            Bitmap open_image1 = new Bitmap("Fonts/" + name + "/w.jpeg");
+            this.curr_ru.Add_letter("w", open_image1);
+ 
 
         }
 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ofd_1 = new System.Windows.Forms.OpenFileDialog();
             this.tb_1 = new System.Windows.Forms.TextBox();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
@@ -41,6 +41,7 @@
             this.cb_letter = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgv_text = new System.Windows.Forms.DataGridView();
@@ -97,18 +98,19 @@
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
+            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // сканироватьToolStripMenuItem
             // 
             this.сканироватьToolStripMenuItem.Name = "сканироватьToolStripMenuItem";
-            this.сканироватьToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.сканироватьToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.сканироватьToolStripMenuItem.Text = "Сканировать";
             this.сканироватьToolStripMenuItem.Click += new System.EventHandler(this.сканироватьToolStripMenuItem_Click);
             // 
             // открытьToolStripMenuItem
             // 
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.открытьToolStripMenuItem.Text = "Открыть";
             this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
             // 
@@ -143,6 +145,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.cb_letter);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
@@ -151,6 +154,16 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Загрузка файла";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(176, 87);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 27);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Сохранить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox2
             // 
@@ -172,6 +185,7 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Проба текста";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // dgv_text
             // 
@@ -184,7 +198,7 @@
             this.first,
             this.sec,
             this.third});
-            this.dgv_text.Location = new System.Drawing.Point(334, 19);
+            this.dgv_text.Location = new System.Drawing.Point(289, 19);
             this.dgv_text.Name = "dgv_text";
             this.dgv_text.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_text.RowHeadersVisible = false;
@@ -212,8 +226,8 @@
             // 
             // third
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.third.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.third.DefaultCellStyle = dataGridViewCellStyle4;
             this.third.FillWeight = 20F;
             this.third.HeaderText = "";
             this.third.MinimumWidth = 20;
@@ -267,6 +281,8 @@
         private System.Windows.Forms.DataGridViewImageColumn first;
         private System.Windows.Forms.DataGridViewImageColumn sec;
         private System.Windows.Forms.DataGridViewImageColumn third;
+        private System.Windows.Forms.Button button2;
+
     }
 }
 

@@ -32,3 +32,5 @@ D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Fo
 D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.csproj.GenerateResource.Cache
 D:\Univ\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\Class\Scale.cs
 E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\bin\Debug\Class\Scale.cs
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.Forms.FontSave_form.resources
+E:\Git\Kursach_Kirila\Font_Generetor\Font_Generator\Font_Generator\obj\Debug\Font_Generator.Forms.Select_Font_form.resources
